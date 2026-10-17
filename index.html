@@ -189,11 +189,15 @@
   <div class="section-inner contact-inner">
     <h2>Contact Me</h2>
     <p>For collaborations, work , or freelance work, drop a message below.</p>
-    <form action="save_contact.php" method="post" class="contact-form">
-      <input type="text" name="name" placeholder="Your name" required>
-      <input type="email" name="email" placeholder="Your email" required>
-      <button type="submit" class="primary-btn">Submit</button>
-    </form>
+<form id="contactForm" action="https://formspree.io/f/mjyglkwl" method="POST" class="contact-form">
+  <input type="text" name="name" placeholder="Your name" required>
+  <input type="email" name="email" placeholder="Your email" required>
+  <input type="text" name="subject" placeholder="Subject (collaboration, invite, job...)">
+  <textarea name="message" placeholder="Your message" rows="4" required></textarea>
+  <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+  <button type="submit" class="primary-btn">Send Message</button>
+  <p id="formStatus" role="status"></p>
+</form>
     <div class="socials">
       <a href="mailto:sanchithravikumar@gmail.com">Email</a>
       <a href="https://www.linkedin.com/in/sanchith-ravikumar-58478b278" target="_blank">LinkedIn</a>

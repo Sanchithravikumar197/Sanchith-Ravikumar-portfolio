@@ -41,3 +41,26 @@ let w = 0, c = 0, del = false;
   c += del ? -1 : 1;
   setTimeout(tick, del ? 40 : 80);
 })();
+// Contact form
+const form = document.getElementById("contactForm");
+const statusEl = document.getElementById("formStatus");
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  const btn = form.querySelector("button");
+  btn.disabled = true; btn.textContent = "Sending...";
+  try {
+    const res = await fetch(form.action, {
+      method: "POST",
+      body: new FormData(form),
+      headers: { Accept: "application/json" }
+    });
+    if (!res.ok) throw new Error();
+    form.reset();
+    statusEl.textContent = "Thanks! Your message was sent.";
+    statusEl.className = "ok";
+  } catch {
+    statusEl.textContent = "Something went wrong. Please email me directly.";
+    statusEl.className = "err";
+  }
+  btn.disabled = false; btn.textContent = "Send Message";
+});
