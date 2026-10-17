@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sanchith Ravikumar | Portfolio</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+
+<header class="navbar">
+  <div class="nav-inner">
+    <div class="logo">Sanchith Ravikumar<span></div>
+    <nav class="nav-links">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+      <button id="themeToggle" aria-label="Toggle theme">🌙</button>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-left">
+      <p class="hero-subtitle">Embedded Systems Engineer</p>
+      <h1 class="hero-title">Hello, I’m <span>Sanchith Ravikumar</span></h1>
+      <p class="hero-tagline">I work on <b id="typed"></b><i class="cursor">|</i></p>
+      <div class="hero-actions">
+        <button class="primary-btn" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Me</button>
+        <a class="ghost-btn" href="SANCHITH_GEResume__1_.pdf" download>Download Resume ↓</a>
+      </div>
+      <div class="stats">
+        <div><b>7+</b><span>Projects</span></div>
+        <div><b>3</b><span>Internships</span></div>
+        <div><b>8+</b><span>Innovation</span></div>
+      </div>
+    </div>
+    <div class="hero-right">
+      <div class="hero-photo-wrapper">
+        <img src="image/prosanju1.jpeg" alt="Sanchith Ravikumar" class="hero-photo">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section reveal">
+  <div class="section-inner">
+    <h2>About Me</h2>
+    <p>I am Sanchith Ravikumar, highly motivated Electronics and Instrumentation Engineering (EIE) student, driven by purpose and fueled by curiosity. With a passion for innovation and problem-solving, I am committed to using my knowledge and skills to create impactful solutions in electronics, instrumentation, and automation. I thrive on challenges, keep learning, and aim to contribute meaningfully to technological advancements.</p>
+  </div>
+</section>
+
+<section id="skills" class="section reveal">
+  <div class="section-inner">
+    <h2>Skills</h2>
+    <p>Core technologies and tools used for building reliable embedded and IoT systems.</p>
+    <div class="skills-grid">
+      <div class="skill-card">Embedded Systems</div><div class="skill-card">STM32</div><div class="skill-card">ESP32</div>
+      <div class="skill-card">Siemens TECHNOMATRIX</div><div class="skill-card">IoT</div><div class="skill-card">Node-RED</div>
+      <div class="skill-card">PLC</div><div class="skill-card">MQTT</div><div class="skill-card">Python</div><div class="skill-card">C / C++</div>
+      <div class="skill-card soft">Decision Making</div><div class="skill-card soft">Time Management</div>
+      <div class="skill-card soft">Critical Thinking</div><div class="skill-card soft">Teamwork</div>
+      <div class="skill-card soft">Communication</div><div class="skill-card soft">Leadership</div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" class="section reveal">
+  <div class="section-inner">
+    <h2>Experience</h2>
+    <div class="timeline">
+      <div class="t-item"><h3>TANSAM (Siemens) <small>Intern · 1 month</small></h3><p>Embedded systems and IoT applications, debugging, calibration, documentation and real-time monitoring. Selected based on the ResQLink project.</p></div>
+      <div class="t-item"><h3>Salzer Electronics <small>Intern · 15 days</small></h3><p>Industrial electronics workflows, testing, troubleshooting and quality control exposure.</p></div>
+      <div class="t-item"><h3>AKS Transports <small>Intern · 1 month</small></h3><p>Maintenance tracking, reporting systems and operational scheduling.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section reveal">
+  <div class="section-inner wide">
+    <h2>Projects</h2>
+    <p>Selected work showcasing embedded design, connectivity, and automation.</p>
+    <div class="projects-grid">
+
+      <article class="project-card">
+        <div class="project-cover c1"><span>🏭</span><img src="image/PROMO=X.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="project-body"><h3>PROMO-X</h3>
+        <p>Collects PLC machine data via PROFINET using Raspberry Pi, with AI analytics for anomaly detection and predictive maintenance.</p>
+        <span class="project-tags">Raspberry Pi · PLC · Profinet</span>
+        <a href="https://github.com/Sanchithravikumar197" target="_blank">View on GitHub →</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-cover c2"><span>🚨</span><img src="image/RESQLINK.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="project-body"><h3>ResQlink</h3>
+        <p>Crash detection and alerting using STM32, Node‑RED, and email notifications.</p>
+        <span class="project-tags">STM32 · Node‑RED · Automation</span>
+        <a href="https://github.com/Sanchithravikumar197" target="_blank">View on GitHub →</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-cover c3"><span>🦺</span><img src="image/SMARTVEST.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="project-body"><h3>Smart Vest</h3>
+        <p>ESP32-based health monitoring with multi-sensor integration, wireless transmission and a real-time dashboard.</p>
+        <span class="project-tags">ESP32 · Node‑RED · Dashboard</span>
+        <a href="https://github.com/Sanchithravikumar197" target="_blank">View on GitHub →</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-cover c4"><span>🌡️</span><img src="image/CALI.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="project-body"><h3>Portable Temperature Calibration Device</h3>
+        <p>Field‑ready temperature calibration with ESP32, LM35, RS485, and web dashboard.</p>
+        <span class="project-tags">ESP32 · RS485 · Web UI</span>
+        <a href="https://github.com/Sanchithravikumar197" target="_blank">View on GitHub →</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-cover c5"><span>📡</span><img src="image/PRODUCT.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="project-body"><h3>RFID Based Exam Hall Guidance</h3>
+        <p>Guides students to exam seats using RFID‑tagged IDs and real‑time lookup.</p>
+        <span class="project-tags">RFID · ESP32 · LCD</span>
+        <a href="https://github.com/Sanchithravikumar197" target="_blank">View on GitHub →</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-cover c6"><span>🤟</span><img src="image/volmo.png" alt="" onerror="this.remove()"></div>
+        <div class="project-body"><h3>VOLMO-X</h3>
+        <p>A complete IIoT predictive-maintenance system for pneumatic globe control valves. Real-time sensor fusion, bi-directional physics coupling, automated fault classification, and remaining useful life estimation — packaged as a single-file web dashboard.</p>
+        <span class="project-tags">Software · Simulation · Instrumentation </span>
+        <a href="https://github.com/Sanchithravikumar197" target="_blank">View on GitHub →</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-cover c6"><span>🤟</span><img src="image/SIGNTOTEXT.png" alt="" onerror="this.remove()"></div>
+        <div class="project-body"><h3>Sign Language (Alphabet) to Text</h3>
+        <p>Translates sign language alphabets into readable text using AIML models.</p>
+        <span class="project-tags">AI · Computer Vision</span>
+        <a href="https://github.com/Sanchithravikumar197" target="_blank">View on GitHub →</a></div>
+      </article>
+
+      <article class="project-card">
+        <div class="project-cover c7"><span>🌀</span><img src="image/TempAutomation.jpeg" alt="" onerror="this.remove()"></div>
+        <div class="project-body"><h3>Temperature Based Home Automation</h3>
+        <p>Automatically controls fan speed based on room temperature thresholds.</p>
+        <span class="project-tags">LM35 · Arduino</span>
+        <a href="https://github.com/Sanchithravikumar197" target="_blank">View on GitHub →</a></div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="resume" class="section reveal">
+  <div class="section-inner">
+    <h2>Resume</h2>
+    <div class="resume-block">
+      <div class="resume-info">
+        <h3>Sanchith Ravikumar</h3>
+        <p>B.E. Electronics &amp; Instrumentation Engineering · Kumaraguru College of Technology · 2027</p>
+        <p class="resume-sub">Seeking a Graduate Engineer Trainee role in Embedded system, Instrumentation and IoT.</p>
+        <div class="resume-actions">
+          <a class="primary-btn" href="SANCHITH_GEResume__1_.pdf" target="_blank">View Resume</a>
+          <a class="ghost-btn" href="SANCHITH_GEResume__1_.pdf" download>Download PDF ↓</a>
+        </div>
+      </div>
+      <div class="resume-icon">📄</div>
+    </div>
+  </div>
+</section>
+
+<section id="languages" class="section reveal">
+  <div class="section-inner">
+    <h2>Languages</h2>
+    <div class="Language-grid">
+      <div class="Language-card">English</div>
+      <div class="Language-card">German</div>
+      <div class="Language-card">Telugu</div>
+      <div class="Language-card">Tamil</div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section reveal">
+  <div class="section-inner contact-inner">
+    <h2>Contact Me</h2>
+    <p>For collaborations, work , or freelance work, drop a message below.</p>
+    <form action="save_contact.php" method="post" class="contact-form">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Your email" required>
+      <button type="submit" class="primary-btn">Submit</button>
+    </form>
+    <div class="socials">
+      <a href="mailto:sanchithravikumar@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/sanchith-ravikumar-58478b278" target="_blank">LinkedIn</a>
+      <a href="https://github.com/Sanchithravikumar197" target="_blank">GitHub</a>
+    </div>
+  </div>
+</section>
+
+<footer><p>© 2023 Sanchith Ravikumar</p></footer>
+<script src="main.js"></script>
+</body>
+</html>
